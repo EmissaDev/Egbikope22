@@ -1,0 +1,36 @@
+.element__item {
+  position: relative;
+}
+
+.element__item:hover {
+  transform: scale(1.02);
+}
+
+.element__photo {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.element__photo:hover {
+  opacity: .8;
+}
+
+.element__name {
+  max-width: 226px;
+  margin-left: 10px;
+
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  color: #000000;
+}

@@ -1,0 +1,29 @@
+.logo {
+  height: auto;
+  max-height: 60px;
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.logo_place_footer {
+  width: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  /* .logo_place_header {
+    width: 250px;
+    height: 150px;
+  } */
+}
+
+@media screen and (min-width: 1024px) {
+  /* .logo_place_header {
+    width: 400px;
+    height: 100px;
+  } */
+}

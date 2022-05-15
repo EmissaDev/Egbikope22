@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__menus {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
+}
+
+.header__text {
+  margin: 2vh;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menus {
+    justify-items: center;
+  }
+
+  .header__text {
+    margin: 2vh 10%;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__text {
+    margin: 2vh 8%;
+    font-size: xxx-large;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+    width: 90%;
+  }
+}
