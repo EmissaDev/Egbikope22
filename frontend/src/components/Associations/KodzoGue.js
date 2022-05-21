@@ -1,8 +1,9 @@
 function KodzoGue() {
   return (
-    <section className="">
-      <div>
-        <p>
+    <section className="association">
+      <div className="association__content">
+        <h2 className="association__title">KodzoGue - ASKOG</h2>
+        <p className="association__description">
           Egbikope est un village construit par des freres venus du Ghana a la recherche de
           terres cultivables. ayant decouvert ce milieu dont les terres sont riches et produisent
           de bon produits agricoles, les premiers TEKPA ont demenage de Aflao Avoeme (Ghana) avec

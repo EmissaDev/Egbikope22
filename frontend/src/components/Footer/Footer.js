@@ -1,5 +1,4 @@
 import Logo from "../Logo/Logo";
-import Navigation from "../Navigation/Navigation";
 
 import './Footer.css';
 
@@ -10,7 +9,6 @@ function Footer() {
         <Logo alt="footer" />
         <p className="footer__copyright">© 2022 Egbikope by Emissa. All Rights Reserved.</p>
       </div>
-      <Navigation place="footer" />
     </footer>
   )
 }

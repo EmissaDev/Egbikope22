@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import ANED from "../ANED/ANED";
-import CVD from "../CVD/CVD";
-import KodzoGue from "../KodzoGue/KodzoGue";
+import ANED from "./ANED";
+import CVD from "./CVD";
+import KodzoGue from "./KodzoGue";
 
 import { mainApi } from "../../utils/MainApi";
 

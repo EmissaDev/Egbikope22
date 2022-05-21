@@ -22,8 +22,8 @@ class MainApi {
   /**
    * Loading Cards from the Server
    */
-  getCardsCh2ed() {
-    return fetch(this._baseUrl + '/cards/ch2ed', {
+  getCardsCentre() {
+    return fetch(this._baseUrl + '/cards/cheed', {
       headers: this._headers
     })
     .then(res => this._checkResult(res))

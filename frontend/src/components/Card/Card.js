@@ -7,10 +7,12 @@ function Card(props) {
     props.onCardClick(props.card)
   }
   return(
-    <li className="element__item">
-      <img className="element__photo" src={props.src} alt={props.alt} onClick={handleClick} />
-      <caption className="element__name">{props.title}</caption>
-    </li>
+    <ul className='element'>
+      <li className='element__item'>
+        <img className='element__photo' src={props.src} alt={props.alt} onClick={handleClick} />
+        <caption className='element__name'>{props.title}</caption>
+      </li>
+    </ul>
   )
 }
 

@@ -1,14 +1,30 @@
 .slider {
-  height: 45vh;
+  height: 50vh;
 }
 
+@media screen and (min-width: 768px) {
+  .slider {
+    height: 70vh;
+  }
+  .slide {
+    height: 80%;
+  }
+}
 
 @media screen and (min-width: 1366px) {
+  /* .slider {
+    height: 80vh;
+  } */
+  .slide {
+    height: 75%;
+  }
   .slider a.previousButton {
     left: 15%;
+    top: 35%;
   }
   .slider a.nextButton {
     right: 15%;
+    top: 35%;
   }
 }
 

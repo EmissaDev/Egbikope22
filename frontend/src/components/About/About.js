@@ -1,7 +1,7 @@
 function About() {
   return (
-    <main>
-      <section className="about">
+    <section>
+      <div className="about">
         <div className="about__content">
           <h2 className="about__title">About Us</h2>
           <p className="about__paragraph">
@@ -21,9 +21,9 @@ function About() {
         <div className="fondation-koffi-gongo">
 
         </div>
-      </section>
-      <section className="histoire"></section>
-    </main>
+      </div>
+      <div className="histoire"></div>
+    </section>
 
   )
 }

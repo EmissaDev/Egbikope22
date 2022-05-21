@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 
 
-function CH2ED(props) {
+function CHEED(props) {
   // const [cards, setCards] = React.useState([]);
   const [selectedCard, setSelectedCard] = React.useState({name: "Yosemite", link: "https://code.s3.yandex.net/web-code/yosemite.jpg"});
   const [isImageExpand, setImageExpand] = React.useState(false);
@@ -13,8 +13,8 @@ function CH2ED(props) {
   }
 
   return (
-    <section>
-      <div>
+    <section className='centre'>
+      <div className='centre__accueil'>
         <p>
           Bienvenu au Centre d'Hébergement et d'Education des Enfants Démunis dénommé CH2ED.
           Comme l'explique notre acronyme, nous hébergeons les nfnats délaissés dans les rues,
@@ -38,7 +38,7 @@ function CH2ED(props) {
         </p>
       </div>
 
-      <ul className="elements__list">
+      {/* <ul className="elements__list">
         {
           props.cards.map((card, id) =>
             <Card
@@ -51,7 +51,7 @@ function CH2ED(props) {
             />
           )
         }
-      </ul>
+      </ul> */}
 
       <div>
         <p>
@@ -64,7 +64,7 @@ function CH2ED(props) {
           Vous trouverez ici un extrait de ce projet.
         </p>
       </div>
-      <div className="parrainer">
+      <div className="centre__parrainer">
         <p>
           Pour mieux nous aider vous pouvez parrainer un enfant au choix.
           Comment se passe un parrainage au CH2ED ? Le processus est simple:
@@ -78,7 +78,7 @@ function CH2ED(props) {
           prieres remplir le formulaire ci-apres.
         </p>
       </div>
-      <div className="donation">
+      <div className="centre__donation">
         <p>
           Nous avons besoin de votre soutient pour assurer une bonne réussite aux enfants que
           nous hébergeons et éduquons. Toutes aides qu'elle soient financières,
@@ -101,7 +101,7 @@ function CH2ED(props) {
           T-MONEY: 90047116 / 90200454 / 90176927
         </p>
       </div>
-      <div className="contact">
+      <div className="centre__contact">
         <p>
           Pour avoir plus de details sur nos activite et comment nous venir en aide,
           prieres remplir le formulaire ci-apres.
@@ -110,11 +110,11 @@ function CH2ED(props) {
 
 
 
-      <div className="projet-d'appui">
+      <div className="centre__projet">
         {/* insert pdf view of the project here */}
       </div>
     </section>
   )
 }
 
-export default CH2ED;
+export default CHEED;
