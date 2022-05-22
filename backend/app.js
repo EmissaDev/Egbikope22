@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
+const path = require('path');
 const { celebrate, Joi, errors } = require('celebrate');
 
 const NotFoundedError = require('./errors/NotFoundedError');
@@ -35,21 +36,25 @@ mongoose.connect(DATABASE_URL, {
   useUnifiedTopology: true
 });
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 // connecting routes
-app.use(auth);
-app.use('/users', userRoute);
+app.use(express.static(path.join(__dirname, '../frontend-build')));
+// app.use(auth);
+// app.use('/users', userRoute);
 
 // errors handling
+// app.get('*', (req, res, next) => {
+//   next(new NotFoundedError(notFound));
+// });
 app.get('*', (req, res, next) => {
-  next(new NotFoundedError(notFound));
+  res.sendFile('index.html', {root: path.join(__dirname, '../frontend-build')});
 });
 
-app.use(errorLogger); //enabling error logger
-app.use(errors()); //celebrate error handler
-app.use(error); //centralized error handler
+// app.use(errorLogger); //enabling error logger
+// app.use(errors()); //celebrate error handler
+// app.use(error); //centralized error handler
 
 app.listen(PORT, () => {
   console.log(`Server started\nApp listening at port ${PORT}`);
